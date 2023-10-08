@@ -12,7 +12,7 @@ const Navbar = () => {
                         {
                             links.map((link, index) => {
                                 return (
-                                    <Typography variant="body1" className="text-white cursor-pointer" key={index}>
+                                    <Typography variant="body1" sx={{color: "#FFF", cursor: "pointer"}} key={index}>
                                         {link}
                                     </Typography>
                                 )
@@ -24,19 +24,20 @@ const Navbar = () => {
                             <OutlinedInput
                                 sx={{
                                     display: "flex",
-                                    width: "312px",
-                                    height: "48px",
-                                    padding: "0 24px",
+                                    width: "19.5rem",
+                                    height: "3rem",
+                                    padding: "0 1.5rem",
                                     justifyContent: "space-between",
                                     alignItems: "center",
-                                    borderRadius: "64px",
+                                    borderRadius: "4rem",
                                     border: "0.5px solid #606060",
                                     backgroundColor: "#FFF"
                                 }}
                                 type="text"
                                 placeholder="Pesquisar"
                                 endAdornment={
-                                    <InputAdornment position="end">
+                                    <InputAdornment
+                                     position="end">
                                         <IconButton
                                             aria-label="toggle search input"
                                             edge="end"

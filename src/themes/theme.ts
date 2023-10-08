@@ -11,6 +11,23 @@ const theme = createTheme({
             fontWeight: "600",
             fontStyle: "normal"
         },
+        body2: {
+            fontSize: "1.46rem",
+            fontWeight: "400",
+            color: "#EA3458"
+        },
+        h2: {
+            fontSize: "2.25rem",
+            mixBlendMode: "darken",
+            color: "#EA3458",
+            fontWeight: "800"
+        },
+        h5: {
+           fontSize: "1.46rem",
+           fontWeight: "800", 
+           color: "#051626",
+           textAlign: "center"
+        },
         allVariants: {
             fontFamily: 'Roboto'
         }

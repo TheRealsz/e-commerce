@@ -8,11 +8,11 @@
     }
 
     body {
-        width: 100vw;
+        width: 100%;
     }
 
     #root {
-        width: 1440px;
+        width: 90rem;
         display: flex;
         margin: auto;
         justify-content: center;

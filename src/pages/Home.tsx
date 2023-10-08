@@ -1,23 +1,35 @@
+import Carousel from "../components/Carousels/Carousel"
+import CarouselCard from "../components/Carousels/CarouselCard/CarouselCard"
 import Navbar from "../components/Navbar"
-import Banner from "../assets/frame.png"
+import SectionTitle from "../components/SectionTitle"
+import Desktop from "../assets/imageDesktop.png"
+import Star from "../assets/star.svg"
+import Store from "../assets/store.svg"
+import ProductsList from "../components/ProductsList"
 
 const Home = () => {
     return (
-            <div className="w-full flex flex-col items-center gap-16 shrink-0 bg-white">
-                <div className="w-full flex flex-col justify-center items-center gap-12">
-                    <Navbar />
-                    <div className="flex w-BannerVant flex-col items-start gap-10">
-                        <div className="flex w-full flex-col items-center gap-6">
-                            <div className="flex w-full h-Banner justify-center items-center ">
-                                <img src={Banner} alt="Imagem de um notebook" className="rounded-2xl w-full h-full shrink-0" />
-                            </div>
-                            <div className="w-full flex justify-center">
-                                
-                            </div>
+        <div className="w-full flex flex-col items-center gap-16 shrink-0 bg-white">
+            <div className="w-full flex flex-col justify-center items-center gap-12">
+                <Navbar />
+                <div className="flex flex-col gap-6 items-center">
+                    <Carousel />
+                    <div className="flex flex-col gap-16">
+                        <div className="flex flex-col justify-center items-center gap-8 self-stretch">
+                            <SectionTitle title="Destaques" icon={Star}/>
+                            <CarouselCard />
+                        </div>
+                        <div className="">
+                            <img src={Desktop} className="flex rounded-2xl w-full" />
+                        </div>
+                        <div className="flex flex-col items-center gap-4">
+                            <SectionTitle title="Produtos" icon={Store} />
+                            <ProductsList />
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     )
 }
 

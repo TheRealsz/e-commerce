@@ -6,7 +6,7 @@ import { ThemeProvider } from "@emotion/react"
 import Home from "./pages/Home"
 import theme from "./themes/theme"
 
-
+// Realizar layout
 function App() {
 
   return (
