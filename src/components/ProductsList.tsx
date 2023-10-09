@@ -28,8 +28,8 @@ const ProductsList = () => {
                     height="20.93rem"/>
                 <CardProducts
                     img={PlacaVideo}
-                    productName="Computador gamer"
-                    productPrice="5.550,00"
+                    productName="Placa de video"
+                    productPrice="3.810,00"
                     width="16.75rem" 
                     height="20.93rem"/>
             </div>

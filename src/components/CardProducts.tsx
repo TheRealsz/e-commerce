@@ -11,7 +11,7 @@ interface ICardProducts {
 
 const CardProducts = (props : ICardProducts) => {
     return (
-        <Card sx={{
+        <Card sx={{ 
             display: "flex",
             paddingBottom: "0",
             flexDirection: "column",

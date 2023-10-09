@@ -15,7 +15,7 @@ const Home = () => {
         <div className="w-full flex flex-col items-center gap-16 shrink-0 bg-white">
             <div className="w-full flex flex-col justify-center items-center gap-12">
                 <Navbar />
-                <div className="flex flex-col gap-6 items-center">
+                <div className="w-main flex flex-col gap-6 items-center">
                     <Carousel />
                     <div className="flex flex-col gap-16">
                         <div className="flex flex-col justify-center items-center gap-8 self-stretch">
@@ -32,8 +32,8 @@ const Home = () => {
                         <div className="flex flex-col justify-center items-start gap-4 self-stretch">
                             <SectionTitle title="Quem somos" icon={House} />
                             <div className="flex items-center gap-8 self-stretch">
-                                <div className="flex-1">
-                                    <Typography variant="body2">
+                                <div className="flex-text">
+                                    <Typography variant="body2" color={"#222"}>
                                         Lorem ipsum dolor sit amet consectetur. Risus
                                         lacinia proin tortor sit. Tellus purus in quis
                                         maecenas amet pretium. In metus morbi bibendum
@@ -42,7 +42,12 @@ const Home = () => {
                                         vivamus sagittis enim metus pretium eros
                                         sit nibh. Euismod phasellus natoque malesuada enim.
                                     </Typography>
-                                    <img src={QuemSomos} alt="Mulher numa loja" />
+                                </div>
+                                <div className="flex w-93 h-60 justify-center items-center">
+                                    <img src={QuemSomos} alt="Mulher numa loja" className="flex-shrink-0 bg-cover bg-no-repeat rounded-2xl"/>
+                                </div>
+                                <div className="flex flex-col items-center gap-16 self-stretch">
+                                    
                                 </div>
                             </div>
                         </div>

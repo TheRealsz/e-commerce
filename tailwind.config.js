@@ -16,7 +16,8 @@ export default {
       },
       width: {
         "default": "90rem",
-        "BannerVant": "73rem"
+        "main": "73rem",
+        "92": "23rem"
       },
       height :{ 
         "Banner": "41.1rem"
@@ -26,6 +27,9 @@ export default {
         "-uppy-azul": "#051626",
         "-uppy-azul-4": "#9BA2A8"
       },
+      flex: {
+        "text": "1 0 0"
+      }
     },
   },
   plugins: [],
