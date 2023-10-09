@@ -6,6 +6,9 @@ import Desktop from "../assets/imageDesktop.png"
 import Star from "../assets/star.svg"
 import Store from "../assets/store.svg"
 import ProductsList from "../components/ProductsList"
+import House from "../assets/house.svg"
+import QuemSomos from "../assets/quemSomos.png"
+import { Typography } from "@mui/material"
 
 const Home = () => {
     return (
@@ -16,15 +19,32 @@ const Home = () => {
                     <Carousel />
                     <div className="flex flex-col gap-16">
                         <div className="flex flex-col justify-center items-center gap-8 self-stretch">
-                            <SectionTitle title="Destaques" icon={Star}/>
+                            <SectionTitle title="Destaques" icon={Star} />
                             <CarouselCard />
                         </div>
-                        <div className="">
+                        <div>
                             <img src={Desktop} className="flex rounded-2xl w-full" />
                         </div>
                         <div className="flex flex-col items-center gap-4">
                             <SectionTitle title="Produtos" icon={Store} />
                             <ProductsList />
+                        </div>
+                        <div className="flex flex-col justify-center items-start gap-4 self-stretch">
+                            <SectionTitle title="Quem somos" icon={House} />
+                            <div className="flex items-center gap-8 self-stretch">
+                                <div className="flex-1">
+                                    <Typography variant="body2">
+                                        Lorem ipsum dolor sit amet consectetur. Risus
+                                        lacinia proin tortor sit. Tellus purus in quis
+                                        maecenas amet pretium. In metus morbi bibendum
+                                        facilisis ultrices ipsum. Cras quis tellus
+                                        velit eget id risus imperdiet vitae. Et
+                                        vivamus sagittis enim metus pretium eros
+                                        sit nibh. Euismod phasellus natoque malesuada enim.
+                                    </Typography>
+                                    <img src={QuemSomos} alt="Mulher numa loja" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

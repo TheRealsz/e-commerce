@@ -1,4 +1,4 @@
-import CardProducts from "../../Card"
+import CardProducts from "../../CardProducts"
 import Note from "../../../assets/noteCard.png"
 import PC from "../../../assets/pc.png"
 import Xbox from "../../../assets/xbox.png"

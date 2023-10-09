@@ -4,13 +4,14 @@ import { ReactNode } from "react"
 interface ICardProducts {
     img: ReactNode,
     productName: string,
-    productPrice: string
+    productPrice: string,
+    width?: string,
+    height?: string
 }
 
 const CardProducts = (props : ICardProducts) => {
     return (
         <Card sx={{
-            width: "23rem",
             display: "flex",
             paddingBottom: "0",
             flexDirection: "column",
@@ -22,14 +23,18 @@ const CardProducts = (props : ICardProducts) => {
             <CardMedia
                 component="img"
                 sx={{
+                    width: `${props.width}` || "23rem",
+                    height: `${props.height}` || "28.75rem", 
                     display: "flex",
-                    width: "23rem",
-                    height: "28.75rem",
+                    maxWidth: "23rem",
+                    maxHeight: "28.75rem",
                     flexDirection: "column",
                     justifyContent: "center",
                     alignItems: "center",
                     flexShrink: "0",
                     borderRadius: "1rem",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat"
 
                 }}
                 image={props.img}
@@ -66,7 +71,7 @@ const CardProducts = (props : ICardProducts) => {
                 <Typography variant="h5">
                     {props.productName}
                 </Typography>
-                <Typography variant="body2">
+                <Typography variant="body2" color={"#EA3458"}>
                     R$ {props.productPrice}
                 </Typography>
             </CardContent>
