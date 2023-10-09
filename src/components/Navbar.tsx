@@ -12,7 +12,7 @@ const Navbar = () => {
                         {
                             links.map((link, index) => {
                                 return (
-                                    <Typography variant="body1" sx={{color: "#FFF", cursor: "pointer"}} key={index}>
+                                    <Typography variant="body1" className="text-white cursor-pointer" key={index}>
                                         {link}
                                     </Typography>
                                 )

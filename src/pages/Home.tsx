@@ -9,6 +9,7 @@ import ProductsList from "../components/ProductsList"
 import House from "../assets/house.svg"
 import QuemSomos from "../assets/quemSomos.png"
 import { Typography } from "@mui/material"
+import NewsForm from "../components/NewsForm"
 
 const Home = () => {
     return (
@@ -33,7 +34,7 @@ const Home = () => {
                             <SectionTitle title="Quem somos" icon={House} />
                             <div className="flex items-center gap-8 self-stretch">
                                 <div className="flex-text">
-                                    <Typography variant="body2" color={"#222"}>
+                                    <Typography variant="body2" className="text-preto">
                                         Lorem ipsum dolor sit amet consectetur. Risus
                                         lacinia proin tortor sit. Tellus purus in quis
                                         maecenas amet pretium. In metus morbi bibendum
@@ -44,12 +45,12 @@ const Home = () => {
                                     </Typography>
                                 </div>
                                 <div className="flex w-93 h-60 justify-center items-center">
-                                    <img src={QuemSomos} alt="Mulher numa loja" className="flex-shrink-0 bg-cover bg-no-repeat rounded-2xl"/>
-                                </div>
-                                <div className="flex flex-col items-center gap-16 self-stretch">
-                                    
+                                    <img src={QuemSomos} alt="Mulher numa loja" className="flex-shrink-0 bg-cover bg-no-repeat rounded-2xl" />
                                 </div>
                             </div>
+                        </div>
+                        <div className="flex flex-col items-center gap-16 self-stretch">
+                            <NewsForm />
                         </div>
                     </div>
                 </div>

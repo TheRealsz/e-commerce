@@ -71,7 +71,7 @@ const CardProducts = (props : ICardProducts) => {
                 <Typography variant="h5">
                     {props.productName}
                 </Typography>
-                <Typography variant="body2" color={"#EA3458"}>
+                <Typography variant="body2" className="-text-uppy-rosa">
                     R$ {props.productPrice}
                 </Typography>
             </CardContent>
