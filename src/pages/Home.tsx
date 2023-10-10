@@ -3,13 +3,14 @@ import CarouselCard from "../components/Carousels/CarouselCard/CarouselCard"
 import Navbar from "../components/Navbar"
 import SectionTitle from "../components/SectionTitle"
 import Desktop from "../assets/imageDesktop.png"
-import Star from "../assets/star.svg"
-import Store from "../assets/store.svg"
+import Star from "../assets/icons/star.svg"
+import Store from "../assets/icons/store.svg"
 import ProductsList from "../components/ProductsList"
-import House from "../assets/house.svg"
+import House from "../assets/icons/house.svg"
 import QuemSomos from "../assets/quemSomos.png"
 import { Typography } from "@mui/material"
 import NewsForm from "../components/NewsForm"
+import Footer from "../components/Footer"
 
 const Home = () => {
     return (
@@ -54,6 +55,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+                <Footer />
             </div>
         </div>
     )

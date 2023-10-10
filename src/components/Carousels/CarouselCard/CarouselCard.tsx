@@ -1,9 +1,10 @@
 import CardProducts from "../../CardProducts"
-import Note from "../../../assets/noteCard.png"
-import PC from "../../../assets/pc.png"
-import Xbox from "../../../assets/xbox.png"
+import jsonData from '../../../data/mock.json'
 
 const CarouselCard = () => {
+
+    const bestProducts = jsonData.bestProducts
+
     return (
         <div className="flex items-center gap-4 relative">
             <div className="absolute -left-24 cursor-pointer">
@@ -12,18 +13,17 @@ const CarouselCard = () => {
                 </svg>
             </div>
             <div className="flex justify-center items-center gap-8 rounded-2xl">
-                <CardProducts
-                    img={Note}
-                    productName="Notebook"
-                    productPrice="4.000,00" />
-                <CardProducts
-                    img={PC}
-                    productName="Computador gamer"
-                    productPrice="6.000,00" />
-                <CardProducts
-                    img={Xbox}
-                    productName="Xbox"
-                    productPrice="4.000,00" />
+            {
+                    bestProducts.map((bp) => {
+                        return (
+                            <CardProducts
+                                key={bp.id}
+                                img={bp.imgPath}
+                                productName={bp.name}
+                                productPrice={bp.price} />
+                        )
+                    })
+                }
             </div>
             <div className="absolute -right-24 cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="37" viewBox="0 0 20 37" fill="none">

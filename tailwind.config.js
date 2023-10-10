@@ -12,15 +12,19 @@ export default {
       },
       borderRadius: {
         "navbar": "0 0 1rem 1rem",
-        "sections": " 0 4rem 4rem 0"
+        "sections": " 0 4rem 4rem 0",
+        "input": "4rem",
+        "footer": "1rem 1rem 0rem 0rem"
       },
       width: {
         "default": "90rem",
         "main": "73rem",
+        "70": "17.5rem",
         "92": "23rem"
       },
       height: {
-        "Banner": "41.1rem"
+        "Banner": "41.1rem",
+        "Divider": " 0.0625rem"
       },
       colors: {
         "-uppy-rosa": "#EA3458",
@@ -52,6 +56,12 @@ export default {
         "Elev-3": "0px -8px 8px 0px rgba(0, 0, 0, 0.15)",
         "Elev-4": "0px 0px 16px 0px #69737D",
       },
+      fontFamily: {
+        "Roboto": "Roboto"
+      },
+      fontSize: {
+        "1.17": "1.17rem"
+      }
     },
   },
   plugins: [],

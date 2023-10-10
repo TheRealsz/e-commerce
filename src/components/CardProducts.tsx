@@ -1,8 +1,8 @@
 import { Card, CardContent, CardMedia, Typography } from "@mui/material"
-import { ReactNode } from "react"
 
 interface ICardProducts {
-    img: ReactNode,
+    key: number,
+    img: string,
     productName: string,
     productPrice: string,
     width?: string,
@@ -38,7 +38,6 @@ const CardProducts = (props : ICardProducts) => {
 
                 }}
                 image={props.img}
-                alt="Notebook"
             />
             <div className="absolute right-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="58" height="57" viewBox="0 0 58 57" fill="none">
@@ -68,7 +67,7 @@ const CardProducts = (props : ICardProducts) => {
                 gap: "0.5rem",
                 alignSelf: "stretch"
             }}>
-                <Typography variant="h5">
+                <Typography variant="h5" color={"#051626"}>
                     {props.productName}
                 </Typography>
                 <Typography variant="body2" className="-text-uppy-rosa">

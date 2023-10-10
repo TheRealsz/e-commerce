@@ -2,6 +2,12 @@ import { createTheme } from "@mui/material";
 
 const theme = createTheme({
     typography: {
+        subtitle1: {
+            fontSize: "1.17rem",
+            fontStyle: "normal",
+            fontWeight: 400,
+            lineHeight: "normal"
+        },
         body1: {
             fontWeight: "600",
             fontStyle: "normal"
@@ -14,15 +20,21 @@ const theme = createTheme({
             letterSpacing: "normal"
         },
         h2: {
-            fontSize: "2.25rem",
-            mixBlendMode: "darken",
+            fontSize: "2.28rem",
             color: "#EA3458",
-            fontWeight: "800"
+            fontWeight: "800",
+            fontStyle: "normal",
+            lineHeight: "normal"
+        },
+        h4: {
+            fontSize: "1.83rem",
+            fontWeight: "700",
+            fontStyle: "normal",
+            lineHeight: "normal"
         },
         h5: {
            fontSize: "1.46rem",
            fontWeight: "800", 
-           color: "#051626",
            textAlign: "center"
         },
         allVariants: {

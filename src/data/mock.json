@@ -1,0 +1,48 @@
+{
+  "bestProducts": [
+    {
+      "id": 1,
+      "imgPath": "src/assets/noteCard.png",
+      "name": "Notebook",
+      "price": "4.000,00"
+    },
+    {
+      "id": 2,
+      "imgPath": "src/assets/PC.png",
+      "name": "Computador gamer",
+      "price": "6.000,00"
+    },
+    {
+      "id": 3,
+      "imgPath": "src/assets/Xbox.png",
+      "name": "Xbox",
+      "price": "4.000,00"
+    }
+  ],
+  "products": [
+    {
+      "id": 4,
+      "imgPath": "src/assets/monitor.png",
+      "name": "Monitor",
+      "price": "1.500,00"
+    },
+    {
+      "id": 5,
+      "imgPath": "src/assets/teclado.png",
+      "name": "Teclado",
+      "price": "150,00"
+    },
+    {
+      "id": 6,
+      "imgPath": "src/assets/Pc2.png",
+      "name": "Computador gamer",
+      "price": "5.550,00"
+    },
+    {
+      "id": 7,
+      "imgPath": "src/assets/placaVideo.png",
+      "name": "Placa de vídeo",
+      "price": "3.810,00"
+    }
+  ]
+}
