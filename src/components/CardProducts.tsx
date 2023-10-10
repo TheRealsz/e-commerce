@@ -67,7 +67,7 @@ const CardProducts = (props : ICardProducts) => {
                 gap: "0.5rem",
                 alignSelf: "stretch"
             }}>
-                <Typography variant="h5" color={"#051626"}>
+                <Typography variant="h5" className="-text-uppy-azul">
                     {props.productName}
                 </Typography>
                 <Typography variant="body2" className="-text-uppy-rosa">

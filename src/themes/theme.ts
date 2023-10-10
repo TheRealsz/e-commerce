@@ -8,6 +8,12 @@ const theme = createTheme({
             fontWeight: 400,
             lineHeight: "normal"
         },
+        subtitle2: {
+            fontSize: "1.17rem",
+            fontStyle: "normal",
+            fontWeight: 600,
+            lineHeight: "normal"
+        },
         body1: {
             fontWeight: "600",
             fontStyle: "normal"
@@ -21,7 +27,6 @@ const theme = createTheme({
         },
         h2: {
             fontSize: "2.28rem",
-            color: "#EA3458",
             fontWeight: "800",
             fontStyle: "normal",
             lineHeight: "normal"

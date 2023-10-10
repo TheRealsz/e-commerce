@@ -58,7 +58,7 @@ const Footer = () => {
             </div>
             <div className="flex p-33 justify-center items-center gap-16 self-stretch">
                 <div className="flex flex-col items-start gap-6 flex-text">
-                    <Typography variant="h5" color={"#051626"}>Formas de Pagamento</Typography>
+                    <Typography variant="h5" className="-text-uppy-azul">Formas de Pagamento</Typography>
                     <div className="flex justify-center items-center gap-4">
                         <img src={cash} alt="Icone de dinheiro" />
                         <img src={cart} alt="Icone de carrinho" />
@@ -70,14 +70,14 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="flex flex-col items-center gap-6 flex-text">
-                    <Typography variant="h5" color={"#051626"}>Sua compra está segura.</Typography>
+                    <Typography variant="h5" className="-text-uppy-azul">Sua compra está segura.</Typography>
                     <div className="flex items-center content-center gap-4 flex-wrap">
                         <img src={google} alt="Google site seguro" />
                         <img src={SSL} alt="Google site seguro" />
                     </div>
                 </div>
                 <div className="flex justify-end items-center gap-4 flex-text">
-                    <Typography variant="subtitle1" color={"#051626"}>Criado com</Typography>
+                    <Typography variant="subtitle1" className="-text-uppy-azul">Criado com</Typography>
                     <img src={uppyColored} alt="" />
                 </div>
             </div>

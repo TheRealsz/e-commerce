@@ -18,13 +18,16 @@ export default {
       },
       width: {
         "default": "90rem",
-        "main": "73rem",
+        "main": "73.125rem",
         "70": "17.5rem",
-        "92": "23rem"
+        "92": "23rem",
+        "168": "42rem",
+        "142": "35.5rem"
       },
       height: {
         "Banner": "41.1rem",
-        "Divider": " 0.0625rem"
+        "Divider": " 0.0625rem",
+        "142": "35.5rem"
       },
       colors: {
         "-uppy-rosa": "#EA3458",
@@ -61,6 +64,9 @@ export default {
       },
       fontSize: {
         "1.17": "1.17rem"
+      },
+      borderWidth: {
+        "2": "0.5px"
       }
     },
   },

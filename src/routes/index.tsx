@@ -6,7 +6,7 @@ export function Router() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/home" element={<Home />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/product" element={<Product />} />
             </Routes>
         </BrowserRouter>

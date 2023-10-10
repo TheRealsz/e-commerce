@@ -4,7 +4,7 @@ const NewsForm = () => {
     return (
         <div className="flex py-6 px-16 items-center gap-16 self-stretch rounded-2xl -bg-uppy-azul mix-blend-darken">
             <div className="flex flex-col items-center gap-2 flex-text">
-                <Typography variant="h2" className="self-stretch">Inscreva-se e acompanhe</Typography>
+                <Typography variant="h2" className="self-stretch -text-uppy-rosa">Inscreva-se e acompanhe</Typography>
                 <Typography variant="subtitle1" className="text-white self-stretch">Nossa newsletter sempre cheia de novidades.</Typography>
             </div>
             <form className="flex center items-start gap-4 text-1.17 not-italic leading-normal">
