@@ -12,7 +12,7 @@ const NewsForm = () => {
                     <input type="text" className="flex w-70 py-2 px-4 items-center gap-2 self-stretch rounded-input bg-preto-8 font-Roboto outline-none" placeholder="Nome"/>
                     <input type="email" className="flex w-70 py-2 px-4 items-center gap-2 self-stretch rounded-input bg-preto-8 font-Roboto outline-none" placeholder="Email"/>
                 </div>
-                <button className="flex h-12 py-0 px-6 justify-center items-center gap-3 -bg-uppy-rosa rounded-input text-white shadow-Elev hover:-bg-uppy-rosa-2 transition-all">Enviar</button>
+                <button type="button" className="flex h-12 py-0 px-6 justify-center items-center gap-3 -bg-uppy-rosa rounded-input text-white shadow-Elev hover:-bg-uppy-rosa-2 transition-all">Enviar</button>
             </form>
         </div>
     )
