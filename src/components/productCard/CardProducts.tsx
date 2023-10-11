@@ -1,7 +1,7 @@
 import { Card, CardContent, CardMedia, Typography } from "@mui/material"
 import { useNavigate } from "react-router-dom"
-import unfav from '../../assets/icons/unfav.svg'
-import fav from '../../assets/icons/fav.png'
+import unfav from '../../../public/assets/icons/unfav.svg'
+import fav from '../../../public/assets/icons/fav.png'
 import { MouseEventHandler, useState } from "react"
 
 interface ICardProducts {

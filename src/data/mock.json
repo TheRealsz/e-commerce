@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "imgPath": ["/src/assets/noteCard.png", "/src/assets/PC.png", "/src/assets/monitor.png"],
+      "imgPath": ["/assets/noteCard.png", "/assets/PC.png", "/assets/monitor.png"],
       "name": "Notebook",
       "price": "4.000,00",
       "installment": "12x de R$340,00",
@@ -13,7 +13,7 @@
     },
     {
       "id": 2,
-      "imgPath": ["/src/assets/PC.png", "/src/assets/Xbox.png", "/src/assets/monitor.png"],
+      "imgPath": ["/assets/PC.png", "/assets/Xbox.png", "/assets/monitor.png"],
       "name": "Computador gamer",
       "price": "6.000,00",
       "installment": "12x de R$500,00",
@@ -24,7 +24,7 @@
     },
     {
       "id": 3,
-      "imgPath": ["/src/assets/Xbox.png", "/src/assets/noteCard.png", "/src/assets/teclado.png"],
+      "imgPath": ["/assets/Xbox.png", "/assets/noteCard.png", "/assets/teclado.png"],
       "name": "Xbox",
       "price": "4.000,00",
       "installment": "12x de R$340,00",
@@ -35,7 +35,7 @@
     },
     {
       "id": 4,
-      "imgPath": ["/src/assets/Xbox.png", "/src/assets/noteCard.png", "/src/assets/teclado.png"],
+      "imgPath": ["/assets/Xbox.png", "/assets/noteCard.png", "/assets/teclado.png"],
       "name": "Xbox",
       "price": "4.000,00",
       "installment": "12x de R$340,00",
@@ -46,7 +46,7 @@
     },
     {
       "id": 5,
-      "imgPath": ["/src/assets/PC.png", "/src/assets/Xbox.png", "/src/assets/monitor.png"],
+      "imgPath": ["/assets/PC.png", "/assets/Xbox.png", "/assets/monitor.png"],
       "name": "Computador gamer",
       "price": "6.000,00",
       "installment": "12x de R$500,00",
@@ -57,7 +57,7 @@
     },
     {
       "id": 6,
-      "imgPath": ["/src/assets/noteCard.png", "/src/assets/PC.png", "/src/assets/monitor.png"],
+      "imgPath": ["/assets/noteCard.png", "/assets/PC.png", "/assets/monitor.png"],
       "name": "Notebook",
       "price": "4.000,00",
       "installment": "12x de R$340,00",
@@ -68,7 +68,7 @@
     },
     {
       "id": 7,
-      "imgPath": ["/src/assets/monitor.png", "/src/assets/setup.jpg", "/src/assets/placaVideo.png"],
+      "imgPath": ["/assets/monitor.png", "/assets/setup.jpg", "/assets/placaVideo.png"],
       "name": "Monitor",
       "price": "1.500,00",
       "installment": "12x de R$125,00",
@@ -78,7 +78,7 @@
     },
     {
       "id": 8,
-      "imgPath": ["/src/assets/teclado.png", "/src/assets/Pc2.png", "/src/assets/setup_full.jpg"],
+      "imgPath": ["/assets/teclado.png", "/assets/Pc2.png", "/assets/setup_full.jpg"],
       "name": "Teclado",
       "price": "150,00",
       "installment": "12x de R$12,50",
@@ -88,7 +88,7 @@
     },
     {
       "id": 9,
-      "imgPath": ["/src/assets/Pc2.png", "/src/assets/setup_full.jpg", "/src/assets/Xbox.png"],
+      "imgPath": ["/assets/Pc2.png", "/assets/setup_full.jpg", "/assets/Xbox.png"],
       "name": "Computador gamer",
       "price": "5.550,00",
       "installment": "12x de R$470,00",
@@ -98,7 +98,7 @@
     },
     {
       "id": 10,
-      "imgPath": ["/src/assets/placaVideo.png", "/src/assets/noteCard.png", "/src/assets/teclado.png"],
+      "imgPath": ["/assets/placaVideo.png", "/assets/noteCard.png", "/assets/teclado.png"],
       "name": "Placa de vídeo",
       "price": "3.810,00",
       "installment": "12x de R$320,00",

@@ -1,6 +1,6 @@
-import Banner from "../../assets/frame.png"
-import SetupFull from "../../assets/setup_full.jpg"
-import Setup from "../../assets/setup.jpg"
+import Banner from "../../../public/assets/frame.png"
+import SetupFull from "../../../public/assets/setup_full.jpg"
+import Setup from "../../../public/assets/setup.jpg"
 import { useEffect, useState } from "react"
 
 // Use React Material UI Carousel

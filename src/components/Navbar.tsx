@@ -1,8 +1,8 @@
 import { FormControl, IconButton, InputAdornment, OutlinedInput, Typography } from "@mui/material"
-import notification from "../assets/icons/notification.svg"
-import search from "../assets/icons/search.svg"
-import wallet from "../assets/icons/wallet.svg"
-import uppyLogo from "../assets/uppyLogo.svg"
+import notification from "../../public/assets/icons/notification.svg"
+import search from "../../public/assets/icons/search.svg"
+import wallet from "../../public/assets/icons/wallet.svg"
+import uppyLogo from "../../public/assets/uppyLogo.svg"
 import { useNavigate } from "react-router-dom"
 
 const Navbar = () => {
