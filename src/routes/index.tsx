@@ -7,7 +7,7 @@ export function Router() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/product" element={<Product />} />
+                <Route path="/product/:productId" element={<Product />} />
             </Routes>
         </BrowserRouter>
     )

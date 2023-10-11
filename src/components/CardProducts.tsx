@@ -1,15 +1,20 @@
 import { Card, CardContent, CardMedia, Typography } from "@mui/material"
+import { useNavigate } from "react-router-dom"
 
 interface ICardProducts {
-    key: number,
     img: string,
     productName: string,
     productPrice: string,
     width?: string,
-    height?: string
+    height?: string,
+    id: number
 }
 
 const CardProducts = (props : ICardProducts) => {
+    const navigate = useNavigate()
+    const baseUrl = import.meta.env.BASE_URL || ""
+    
+
     return (
         <Card sx={{ 
             display: "flex",
@@ -19,7 +24,7 @@ const CardProducts = (props : ICardProducts) => {
             gap: "0.75rem",
             position: "relative",
             boxShadow: "none"
-        }}>
+        }} onClick={() => navigate(`/product/${props.id}`)}>
             <CardMedia
                 component="img"
                 sx={{
@@ -37,7 +42,7 @@ const CardProducts = (props : ICardProducts) => {
                     backgroundRepeat: "no-repeat"
 
                 }}
-                image={props.img}
+                image={`${baseUrl}${props.img}`}
             />
             <div className="absolute right-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="58" height="57" viewBox="0 0 58 57" fill="none">

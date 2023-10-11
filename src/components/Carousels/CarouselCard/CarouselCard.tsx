@@ -5,7 +5,7 @@ import right from '../../../assets/icons/right.svg'
 
 const CarouselCard = () => {
 
-    const bestProducts = jsonData.bestProducts
+    const product = jsonData.products
 
     return (
         <div className="flex items-center gap-4 relative">
@@ -14,13 +14,17 @@ const CarouselCard = () => {
             </div>
             <div className="flex justify-center items-center gap-8 rounded-2xl">
             {
-                    bestProducts.map((bp) => {
+                    product.map((bp, i) => {
+                        if (!bp.best) {
+                            return
+                        } 
                         return (
                             <CardProducts
-                                key={bp.id}
+                                key={i}
                                 img={bp.imgPath}
                                 productName={bp.name}
-                                productPrice={bp.price} />
+                                productPrice={bp.price}
+                                id={bp.id} />
                         )
                     })
                 }

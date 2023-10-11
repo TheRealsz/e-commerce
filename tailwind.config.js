@@ -22,12 +22,15 @@ export default {
         "70": "17.5rem",
         "92": "23rem",
         "168": "42rem",
-        "142": "35.5rem"
+        "142": "35.5rem",
+        "modal": "25rem",
+        "modalPhoto": "38rem"
       },
       height: {
         "Banner": "41.1rem",
         "Divider": " 0.0625rem",
-        "142": "35.5rem"
+        "142": "35.5rem",
+        "modalPhoto": "38rem"
       },
       colors: {
         "-uppy-rosa": "#EA3458",
@@ -66,7 +69,8 @@ export default {
         "1.17": "1.17rem"
       },
       borderWidth: {
-        "2": "0.5px"
+        "2": "0.5px",
+        "8": "2px"
       }
     },
   },
