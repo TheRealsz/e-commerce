@@ -55,7 +55,7 @@
     },
     {
       "id": 6,
-      "imgPath": ["/src/assets/Pc2.png", "/src/assets/imageDesktop.png", "/src/assets/Xbox.png"],
+      "imgPath": ["/src/assets/Pc2.png", "/src/assets/setup_full.jpg", "/src/assets/Xbox.png"],
       "name": "Computador gamer",
       "price": "5.550,00",
       "installment": "12x de R$470,00",

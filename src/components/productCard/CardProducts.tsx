@@ -1,6 +1,8 @@
 import { Card, CardContent, CardMedia, Typography } from "@mui/material"
 import { useNavigate } from "react-router-dom"
-import fav from '../../assets/icons/fav.svg'
+import unfav from '../../assets/icons/unfav.svg'
+import fav from '../../assets/icons/fav.png'
+import { useState } from "react"
 
 interface ICardProducts {
     img: string,
@@ -13,9 +15,20 @@ interface ICardProducts {
 
 const CardProducts = (props: ICardProducts) => {
     const navigate = useNavigate()
-    
+    const [isFavorited, setIsFavorited] = useState(false);
+
+    const toggleFavorite = () => {
+        setIsFavorited(!isFavorited);
+    };
+
+
+    const handleStopPropagation = (e: MouseEvent<HTMLFormElement>) => {
+        e.stopPropagation()
+        toggleFavorite()
+    }
+
     return (
-        <Card className="flex pb-0 flex-col items-center gap-3 relative hover:scale-105 transition-all cursor-pointer" sx={{ boxShadow: "none" }} onClick={() => navigate(`/product/${props.id}`)}>
+        <Card className="flex pb-0 flex-col items-center gap-3 relative  cursor-pointer" sx={{ boxShadow: "none" }} onClick={() => navigate(`/product/${props.id}`)}>
             <CardMedia
                 component="img"
                 className="fle flex-col justify-center items-center shrink-0 rounded-2xl bg-cover bg-no-repeat"
@@ -29,9 +42,17 @@ const CardProducts = (props: ICardProducts) => {
                 }}
                 image={`${props.img}`}
             />
-            <div className="absolute right-0">
-                <img src={fav} alt="Favoritar" />
-            </div>
+            {
+                isFavorited
+                    ?
+                    <div className="absolute right-4 top-4">
+                        <img src={fav} alt="Desfavoritar" className="w-7 h-7" onClick={handleStopPropagation} />
+                    </div>
+                    :
+                    <div className="absolute right-0">
+                        <img src={unfav} alt="Favoritar" onClick={handleStopPropagation} />
+                    </div>
+            }
             <CardContent
                 className="flex flex-col items-center gap-2 self-stretch"
                 sx={{

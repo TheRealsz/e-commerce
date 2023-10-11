@@ -1,7 +1,7 @@
 import Banner from "../../assets/frame.png"
 import SetupFull from "../../assets/setup_full.jpg"
 import Setup from "../../assets/setup.jpg"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 // Use React Material UI Carousel
 
@@ -12,6 +12,14 @@ const Carousel = () => {
     const goToSlide = (index : number) => {
         setCurrentIndex(index)
     }
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+          setCurrentIndex((currentIndex + 1) % slides.length);
+        }, 5000);
+    
+        return () => clearInterval(interval);
+      }, [currentIndex]);
 
     return (
         <div className="flex w-main flex-col items-start gap-10">

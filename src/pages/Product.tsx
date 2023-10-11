@@ -15,7 +15,6 @@ import jsonData from "../data/mock.json"
 import ModalImage from "../components/Modal/ModalImage"
 
 
-// Ver o que da pra componentizar
 
 const Product = () => {
     const navigate = useNavigate()
@@ -36,7 +35,7 @@ const Product = () => {
             <div className="w-full flex flex-col justify-center items-center gap-12">
                 <Navbar />
                 <div className="w-main flex flex-col items-start gap-6">
-                    <ModalImage open={open} setOpen={setOpen} imgArray={imgArray} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}/>
+                    <ModalImage open={open} setOpen={setOpen} imgArray={imgArray} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />
                     <div className="flex py-2 px-0 items-center gap-4 cursor-pointer" onClick={() => navigate("/")}>
                         <div className="flex w-6 justify-between items-center">
                             <img src={back} alt="Voltar" />
@@ -48,10 +47,10 @@ const Product = () => {
                             <div className="flex flex-col justify-center items-center gap-4">
                                 <div className="flex w-168 justify-between items-center">
                                     <img src={left} alt="" />
-                                    <div className="flex w-142 h-142 justify-end items-end shrink-0 rounded-2xl opacity-80 relative">
+                                    <div className="flex w-142 h-142 justify-end items-end shrink-0 rounded-2xl relative">
                                         <img src={`${imgArray[0]}`} className="object-cover rounded-2xl w-full h-full " />
                                         <div className="shrink-0 absolute bottom-6 right-6 cursor-pointer hover:scale-110 transition-all" onClick={() => setOpen(true)}>
-                                            <img src={expand} alt="Expandir"/>
+                                            <img src={expand} alt="Expandir" />
                                         </div>
                                     </div>
                                     <img src={right} alt="" />
@@ -63,7 +62,7 @@ const Product = () => {
                                         <Typography variant="h2" className="-text-uppy-azul">{product?.name}</Typography>
                                         <div className="flex justify-between items-center self-stretch">
                                             <div className="flex flex-col items-start gap-2">
-                                                <Typography variant="h2" className="-text-uppy-rosa">R$ {product?.price}</Typography>   
+                                                <Typography variant="h2" className="-text-uppy-rosa">R$ {product?.price}</Typography>
                                                 <Typography variant="subtitle1" className="-text-uppy-azul-3">ou até {product?.installment}</Typography>
                                             </div>
                                             <div className="flex h-12 px-4 items-center gap-2 rounded-input border-2 border-solid -border-uppy-rosa">
