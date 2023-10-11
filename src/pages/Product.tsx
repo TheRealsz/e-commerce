@@ -20,22 +20,46 @@ const Product = () => {
     const navigate = useNavigate()
     const [items, setItems] = useState<number>(1)
     const [open, setOpen] = useState(false);
-    const [currentIndex, setCurrentIndex] = useState<number>(0)
     const products = jsonData.products
 
     const { productId } = useParams();
 
+    const [currentImage, setCurrentImage] = useState(0);
+
+    const nextSlide = () => {        
+        const nextImage = currentImage + 1;
+        if (nextImage < 3) {
+            setCurrentImage(nextImage);
+        } else {
+            return
+        }
+    };
+
+    const prevSlide = () => {
+        const prevImage = currentImage - 1;
+        if (prevImage >= 0) {
+            setCurrentImage(prevImage);
+        } else {
+            return
+        }
+    };
 
     const product = productId ? products.find((p) => p.id === parseInt(productId)) : null
     const imgArray = product?.imgPath
 
+    const handleSubItem = () => {
+        if (items == 0) {
+            return
+        }
+        setItems(items - 1)
+    }
 
     return (
         <div className="w-full flex flex-col items-center gap-16 shrink-0 bg-white">
             <div className="w-full flex flex-col justify-center items-center gap-12">
                 <Navbar />
                 <div className="w-main flex flex-col items-start gap-6">
-                    <ModalImage open={open} setOpen={setOpen} imgArray={imgArray} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />
+                    <ModalImage open={open} setOpen={setOpen} imgArray={imgArray} currentImage={currentImage} setCurrentImage={setCurrentImage} />
                     <div className="flex py-2 px-0 items-center gap-4 cursor-pointer" onClick={() => navigate("/")}>
                         <div className="flex w-6 justify-between items-center">
                             <img src={back} alt="Voltar" />
@@ -46,14 +70,14 @@ const Product = () => {
                         <div className="flex w-main items-center gap-8 bg-white">
                             <div className="flex flex-col justify-center items-center gap-4">
                                 <div className="flex w-168 justify-between items-center">
-                                    <img src={left} alt="" />
+                                    <img src={left} alt="Anterior" onClick={prevSlide} className="cursor-pointer"/>
                                     <div className="flex w-142 h-142 justify-end items-end shrink-0 rounded-2xl relative">
-                                        <img src={`${imgArray[0]}`} className="object-cover rounded-2xl w-full h-full " />
+                                        <img src={`${imgArray[currentImage]}`} className="object-cover rounded-2xl w-full h-full " />
                                         <div className="shrink-0 absolute bottom-6 right-6 cursor-pointer hover:scale-110 transition-all" onClick={() => setOpen(true)}>
                                             <img src={expand} alt="Expandir" />
                                         </div>
                                     </div>
-                                    <img src={right} alt="" />
+                                    <img src={right} alt="Proxima" onClick={nextSlide} className="cursor-pointer"/>
                                 </div>
                             </div>
                             <div className="flex pt-10 pb-4 flex-col items-center gap-4 flex-text">
@@ -67,7 +91,7 @@ const Product = () => {
                                             </div>
                                             <div className="flex h-12 px-4 items-center gap-2 rounded-input border-2 border-solid -border-uppy-rosa">
                                                 <div className="flex w-4 h-4 justify-center items-center gap-2">
-                                                    <img src={leftCounter} alt="" onClick={() => setItems(items - 1)} />
+                                                    <img src={leftCounter} alt="" onClick={handleSubItem} />
                                                 </div>
                                                 <Typography variant="subtitle1" className="text-preto-3">{items}</Typography>
                                                 <div className="flex w-4 h-4 justify-center items-center gap-2">
@@ -77,7 +101,7 @@ const Product = () => {
                                         </div>
                                     </div>
                                     <div className="flex flex-col items-start gap-6 self-stretch">
-                                        <button className="flex h-12 px-6 justify-center items-center gap-3 self-stretch rounded-input -bg-uppy-rosa shadow-Elev">
+                                        <button className="flex h-12 px-6 justify-center items-center gap-3 self-stretch rounded-input -bg-uppy-rosa shadow-Elev hover:-bg-uppy-rosa-2 transition-all">
                                             <Typography variant="subtitle1" className="text-white">Adicionar ao carrinho</Typography>
                                         </button>
                                         <div className="flex justify-between items-start self-stretch">

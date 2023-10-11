@@ -34,7 +34,7 @@ export default {
       },
       colors: {
         "-uppy-rosa": "#EA3458",
-        "-uppy-rosa-2": "##EE5D79",
+        "-uppy-rosa-2": "#EE5D79",
         "-uppy-rosa-3": "#F2859B",
         "-uppy-rosa-4": "#F7AEBC",
         "-uppy-rosa-5": "#FBD6DE",
