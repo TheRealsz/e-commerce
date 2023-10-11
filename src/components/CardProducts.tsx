@@ -16,15 +16,7 @@ const CardProducts = (props : ICardProducts) => {
     
 
     return (
-        <Card sx={{ 
-            display: "flex",
-            paddingBottom: "0",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "0.75rem",
-            position: "relative",
-            boxShadow: "none"
-        }} onClick={() => navigate(`/product/${props.id}`)}>
+        <Card className="flex pb-0 flex-col items-center gap-3 relative hover:scale-105 transition-all" sx={{boxShadow: "none"}} onClick={() => navigate(`/product/${props.id}`)}>
             <CardMedia
                 component="img"
                 sx={{

@@ -29,16 +29,16 @@ const Footer = () => {
                         }}>Entre em contato</Typography>
                         <div className="flex justify-center items-start gap-4">
                             <div className="w-10 h-10">
-                                <img className="cursor-pointer" src={iconInsta} alt="Instagram" />
+                                <img className="cursor-pointer hover:scale-110 transition-all" src={iconInsta} alt="Instagram" />
                             </div>
                             <div className="w-10 h-10">
-                                <img className="cursor-pointer" src={iconFace} alt="Facebook" />
+                                <img className="cursor-pointer hover:scale-110 transition-all" src={iconFace} alt="Facebook" />
                             </div>
                             <div className="w-10 h-10">
-                                <img className="cursor-pointer" src={iconTiktok} alt="Tiktok" />
+                                <img className="cursor-pointer hover:scale-110 transition-all" src={iconTiktok} alt="Tiktok" />
                             </div>
                             <div className="w-10 h-10">
-                                <img className="cursor-pointer" src={iconWpp} alt="Whatsapp" />
+                                <img className="cursor-pointer hover:scale-110 transition-all" src={iconWpp} alt="Whatsapp" />
                             </div>
                         </div>
                     </div>
@@ -49,11 +49,11 @@ const Footer = () => {
                 </div>
                 <div className="h-Divider self-stretch -bg-uppy-rosa-5"></div>
                 <div className="flex justify-center items-start gap-6 text-white">
-                    <Typography variant="subtitle1">Minha conta</Typography>
-                    <Typography variant="subtitle1">Atendimento</Typography>
-                    <Typography variant="subtitle1">Todos Produtos</Typography>
-                    <Typography variant="subtitle1">Mais vendidos</Typography>
-                    <Typography variant="subtitle1">Novidades</Typography>
+                    <Typography className="hover:-text-uppy-azul transition-all" variant="subtitle1">Minha conta</Typography>
+                    <Typography className="hover:-text-uppy-azul transition-all" variant="subtitle1">Atendimento</Typography>
+                    <Typography className="hover:-text-uppy-azul transition-all" variant="subtitle1">Todos Produtos</Typography>
+                    <Typography className="hover:-text-uppy-azul transition-all" variant="subtitle1">Mais vendidos</Typography>
+                    <Typography className="hover:-text-uppy-azul transition-all" variant="subtitle1">Novidades</Typography>
                 </div>
             </div>
             <div className="flex p-33 justify-center items-center gap-16 self-stretch">

@@ -2,6 +2,9 @@ import { createTheme } from "@mui/material";
 
 const theme = createTheme({
     typography: {
+        allVariants: {
+            fontFamily: 'Roboto'
+        },
         subtitle1: {
             fontSize: "1.17rem",
             fontStyle: "normal",
@@ -42,9 +45,6 @@ const theme = createTheme({
            fontWeight: "800", 
            textAlign: "center"
         },
-        allVariants: {
-            fontFamily: 'Roboto'
-        }
     },
 });
 
