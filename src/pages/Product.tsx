@@ -19,6 +19,7 @@ const Product = () => {
     const navigate = useNavigate()
     const [items, setItems] = useState<number>(1)
     const [open, setOpen] = useState(false);
+    const [currentIndex, setCurrentIndex] = useState<number>(0)
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
     const products = jsonData.products
@@ -27,9 +28,9 @@ const Product = () => {
 
 
     const product = productId ? products.find((p) => p.id === parseInt(productId)) : null
+    const imgArray = product?.imgPath
 
     const baseUrl = import.meta.env.BASE_URL
-
 
     return (
         <div className="w-full flex flex-col items-center gap-16 shrink-0 bg-white">
@@ -44,26 +45,18 @@ const Product = () => {
                             <div className="flex justify-center items-center gap-6">
                                 <div className="flex flex-col justify-end items-center self-stretch">
                                     <div className="flex flex-col justify-center items-center h-full gap-4 self-stretch">
-                                        <div className="flex w-32 h-32 p-3 justify-end items-end gap-3">
-                                            <img src={`${baseUrl}${product?.imgPath}`} alt="" className="w-full h-full rounded-2xl" />
-                                        </div>
-                                        <div className="flex w-24 h-24 p-3 justify-end items-end gap-3">
-                                            <img src={`${baseUrl}${product?.imgPath}`} alt="" className="w-full h-full rounded-2xl opacity-80" />
-                                        </div>
-                                        <div className="flex w-24 h-24 p-3 justify-end items-end gap-3">
-                                            <img src={`${baseUrl}${product?.imgPath}`} alt="" className="w-full h-full rounded-2xl opacity-80" />
-                                        </div>
-                                        <div className="flex w-24 h-24 p-3 justify-end items-end gap-3">
-                                            <img src={`${baseUrl}${product?.imgPath}`} alt="" className="w-full h-full rounded-2xl opacity-80" />
-                                        </div>
-                                        <div className="flex w-24 h-24 p-3 justify-end items-end gap-3">
-                                            <img src={`${baseUrl}${product?.imgPath}`} alt="" className="w-full h-full rounded-2xl opacity-80" />
-                                        </div>
+                                        {
+                                            imgArray?.map((img, i) => (
+                                                <div className={`flex p-3 justify-end items-end gap-3 ${currentIndex == i ? "w-36 h-36" : "w-32 h-32"}`}>
+                                                    <img src={`${baseUrl}${product?.imgPath[i]}`} alt="" className="w-full h-full rounded-2xl hover:scale-105 transition-all" onClick={() => setCurrentIndex(i)} />
+                                                </div>
+                                            ))
+                                        }
                                     </div>
                                 </div>
                                 <div className="w-modalPhoto h-modalPhoto relative">
-                                    <img src={`${baseUrl}${product?.imgPath}`} alt="" className="flex w-full h-full justify-center items-center shrink-0 rounded-lg" />
-                                    <div className="absolute right-7 bottom-7 cursor-pointer hover:scale-110 transition-all" onClick={handleClose}>    
+                                    <img src={`${baseUrl}${product?.imgPath[currentIndex]}`} alt="" className="flex w-full h-full justify-center items-center shrink-0 rounded-lg" />
+                                    <div className="absolute right-7 bottom-7 cursor-pointer hover:scale-110 transition-all" onClick={handleClose}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                             <path d="M11.2 0C10.2933 0 9.6 0.693333 9.6 1.6V9.6H1.6C0.693333 9.6 0 10.2933 0 11.2C0 12.1067 0.693333 12.8 1.6 12.8H11.2C12.1067 12.8 12.8 12.1067 12.8 11.2V1.6C12.8 0.693333 12.1067 0 11.2 0Z" fill="#EA3458" />
                                             <path d="M30.4 9.6H22.4V1.6C22.4 0.693333 21.7067 0 20.8 0C19.8933 0 19.2 0.693333 19.2 1.6V11.2C19.2 12.1067 19.8933 12.8 20.8 12.8H30.4C31.3067 12.8 32 12.1067 32 11.2C32 10.2933 31.3067 9.6 30.4 9.6Z" fill="#EA3458" />
@@ -87,7 +80,7 @@ const Product = () => {
                                 <div className="flex w-168 justify-between items-center">
                                     <img src={left} alt="" />
                                     <div className="flex w-142 h-142 justify-end items-end shrink-0 rounded-2xl opacity-80 relative">
-                                        <img src={`${baseUrl}${product?.imgPath}`} className="object-cover rounded-2xl w-full h-full " />
+                                        <img src={`${baseUrl}${product?.imgPath[0]}`} className="object-cover rounded-2xl w-full h-full " />
                                         <div className="shrink-0 absolute bottom-6 right-6 cursor-pointer hover:scale-110 transition-all" onClick={handleOpen}>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                                 <path d="M11.2 0H1.6C0.693333 0 0 0.693333 0 1.6V11.2C0 12.1067 0.693333 12.8 1.6 12.8C2.50667 12.8 3.2 12.1067 3.2 11.2V3.2H11.2C12.1067 3.2 12.8 2.50667 12.8 1.6C12.8 0.693333 12.1067 0 11.2 0Z" fill="#EA3458" />

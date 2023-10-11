@@ -21,7 +21,7 @@ const CarouselCard = () => {
                         return (
                             <CardProducts
                                 key={i}
-                                img={bp.imgPath}
+                                img={bp.imgPath[0]}
                                 productName={bp.name}
                                 productPrice={bp.price}
                                 id={bp.id} />
