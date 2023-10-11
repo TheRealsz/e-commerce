@@ -2,7 +2,7 @@ import { Card, CardContent, CardMedia, Typography } from "@mui/material"
 import { useNavigate } from "react-router-dom"
 import unfav from '../../assets/icons/unfav.svg'
 import fav from '../../assets/icons/fav.png'
-import { useState } from "react"
+import { MouseEventHandler, useState } from "react"
 
 interface ICardProducts {
     img: string,
@@ -21,11 +21,10 @@ const CardProducts = (props: ICardProducts) => {
         setIsFavorited(!isFavorited);
     };
 
-
-    const handleStopPropagation = (e: MouseEvent<HTMLFormElement>) => {
-        e.stopPropagation()
-        toggleFavorite()
-    }
+    const handleStopPropagation: MouseEventHandler<HTMLImageElement> = (e) => {
+        e.stopPropagation();
+        toggleFavorite();
+    };
 
     return (
         <Card className="flex pb-0 flex-col items-center gap-3 relative hover:scale-105 transition-all cursor-pointer" sx={{ boxShadow: "none" }} onClick={() => navigate(`/product/${props.id}`)}>

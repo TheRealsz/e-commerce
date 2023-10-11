@@ -45,7 +45,7 @@ const Product = () => {
     };
 
     const product = productId ? products.find((p) => p.id === parseInt(productId)) : null
-    const imgArray = product?.imgPath
+    const imgArray: Array<string> | undefined = product?.imgPath
 
     const handleSubItem = () => {
         if (items == 0) {
@@ -72,7 +72,7 @@ const Product = () => {
                                 <div className="flex w-168 justify-between items-center">
                                     <img src={left} alt="Anterior" onClick={prevSlide} className="cursor-pointer"/>
                                     <div className="flex w-142 h-142 justify-end items-end shrink-0 rounded-2xl relative">
-                                        <img src={`${imgArray[currentImage]}`} className="object-cover rounded-2xl w-full h-full " />
+                                        <img src={`${imgArray ? imgArray[currentImage] : null}`} className="object-cover rounded-2xl w-full h-full " />
                                         <div className="shrink-0 absolute bottom-6 right-6 cursor-pointer hover:scale-110 transition-all" onClick={() => setOpen(true)}>
                                             <img src={expand} alt="Expandir" />
                                         </div>

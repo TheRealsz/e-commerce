@@ -30,7 +30,7 @@ const Carousel = () => {
                 <div className="w-full flex justify-center">
                     <div className="flex gap-2 items-center">
                         {
-                            slides.map((slide, index) => (
+                            slides.map((_, index) => (
                                 <span key={index} className={`rounded-full cursor-pointer ${index == currentIndex ? "border -bg-uppy-rosa -border-uppy-rosa w-3 h-3" : "border -border-uppy-azul-4 w-2 h-2"}`} onClick={() => goToSlide(index)}></span>
                             ))
                         }

@@ -4,7 +4,7 @@ import {  Dispatch, SetStateAction } from 'react'
 interface IModalImage {
     open: boolean,
     setOpen: Dispatch<SetStateAction<boolean>>,
-    imgArray: Array<string>,
+    imgArray: Array<string> | undefined,
     currentImage: number,
     setCurrentImage: Dispatch<SetStateAction<number>>
 }
@@ -22,7 +22,7 @@ const ModalImage = ({open, setOpen, imgArray, currentImage, setCurrentImage} : I
                     <div className="flex flex-col justify-end items-center self-stretch">
                         <div className="flex flex-col justify-center items-center h-full gap-4 self-stretch">
                             {
-                                imgArray?.map((img, i) => (
+                                imgArray?.map((_, i) => (
                                     <div className={`flex p-3 justify-end items-end gap-3 ${currentImage == i ? "w-36 h-36" : "w-32 h-32"}`}>
                                         <img src={`${imgArray[i]}`} alt="" className="w-full h-full rounded-2xl hover:scale-105 transition-all" onClick={() => setCurrentImage(i)} />
                                     </div>
@@ -31,7 +31,7 @@ const ModalImage = ({open, setOpen, imgArray, currentImage, setCurrentImage} : I
                         </div>
                     </div>
                     <div className="w-modalPhoto h-modalPhoto relative">
-                        <img src={`${imgArray[currentImage]}`} alt="" className="flex w-full h-full justify-center items-center shrink-0 rounded-lg" />
+                        <img src={`${imgArray ? imgArray[currentImage] : null}`} alt="" className="flex w-full h-full justify-center items-center shrink-0 rounded-lg" />
                         <div className="absolute right-7 bottom-7 cursor-pointer hover:scale-110 transition-all" onClick={() => setOpen(false)}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                 <path d="M11.2 0C10.2933 0 9.6 0.693333 9.6 1.6V9.6H1.6C0.693333 9.6 0 10.2933 0 11.2C0 12.1067 0.693333 12.8 1.6 12.8H11.2C12.1067 12.8 12.8 12.1067 12.8 11.2V1.6C12.8 0.693333 12.1067 0 11.2 0Z" fill="#EA3458" />
