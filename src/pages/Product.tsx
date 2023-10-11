@@ -2,10 +2,9 @@ import { useNavigate, useParams } from "react-router-dom"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import back from "../assets/icons/back.svg"
-import { Box, Modal, Typography } from "@mui/material"
+import { Modal, Typography } from "@mui/material"
 import left from "../assets/icons/left.svg"
 import right from "../assets/icons/right.svg"
-import note from "../assets/noteProduct.png"
 import leftCounter from "../assets/icons/leftCounter.svg"
 import rightCounter from "../assets/icons/rightCounter.svg"
 import share from "../assets/icons/share.svg"
@@ -27,7 +26,7 @@ const Product = () => {
     const { productId } = useParams();
 
 
-    const product = products.find((p) => p.id === parseInt(productId));
+    const product = productId ? products.find((p) => p.id === parseInt(productId)) : null
 
     const baseUrl = import.meta.env.BASE_URL
 

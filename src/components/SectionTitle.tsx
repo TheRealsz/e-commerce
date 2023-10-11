@@ -2,7 +2,7 @@ import { Typography } from "@mui/material"
 import { ReactNode } from "react"
 
 interface ISectionTitle {
-    icon: ReactNode,
+    icon: string | undefined,
     title: string
 }
 
