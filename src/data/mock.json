@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "imgPath": ["/assets/noteCard.png", "/assets/PC.png", "/assets/monitor.png"],
+      "imgPath": ["/assets/noteCard.png", "/assets/pc.png", "/assets/monitor.png"],
       "name": "Notebook",
       "price": "4.000,00",
       "installment": "12x de R$340,00",
@@ -13,7 +13,7 @@
     },
     {
       "id": 2,
-      "imgPath": ["/assets/PC.png", "/assets/Xbox.png", "/assets/monitor.png"],
+      "imgPath": ["/assets/pc.png", "/assets/xbox.png", "/assets/monitor.png"],
       "name": "Computador gamer",
       "price": "6.000,00",
       "installment": "12x de R$500,00",
@@ -24,7 +24,7 @@
     },
     {
       "id": 3,
-      "imgPath": ["/assets/Xbox.png", "/assets/noteCard.png", "/assets/teclado.png"],
+      "imgPath": ["/assets/xbox.png", "/assets/noteCard.png", "/assets/teclado.png"],
       "name": "Xbox",
       "price": "4.000,00",
       "installment": "12x de R$340,00",
@@ -35,7 +35,7 @@
     },
     {
       "id": 4,
-      "imgPath": ["/assets/Xbox.png", "/assets/noteCard.png", "/assets/teclado.png"],
+      "imgPath": ["/assets/xbox.png", "/assets/noteCard.png", "/assets/teclado.png"],
       "name": "Xbox",
       "price": "4.000,00",
       "installment": "12x de R$340,00",
@@ -46,7 +46,7 @@
     },
     {
       "id": 5,
-      "imgPath": ["/assets/PC.png", "/assets/Xbox.png", "/assets/monitor.png"],
+      "imgPath": ["/assets/pc.png", "/assets/xbox.png", "/assets/monitor.png"],
       "name": "Computador gamer",
       "price": "6.000,00",
       "installment": "12x de R$500,00",
@@ -57,7 +57,7 @@
     },
     {
       "id": 6,
-      "imgPath": ["/assets/noteCard.png", "/assets/PC.png", "/assets/monitor.png"],
+      "imgPath": ["/assets/noteCard.png", "/assets/pc.png", "/assets/monitor.png"],
       "name": "Notebook",
       "price": "4.000,00",
       "installment": "12x de R$340,00",
@@ -88,7 +88,7 @@
     },
     {
       "id": 9,
-      "imgPath": ["/assets/Pc2.png", "/assets/setup_full.jpg", "/assets/Xbox.png"],
+      "imgPath": ["/assets/Pc2.png", "/assets/setup_full.jpg", "/assets/xbox.png"],
       "name": "Computador gamer",
       "price": "5.550,00",
       "installment": "12x de R$470,00",
