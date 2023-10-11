@@ -35,6 +35,39 @@
     },
     {
       "id": 4,
+      "imgPath": ["/src/assets/Xbox.png", "/src/assets/noteCard.png", "/src/assets/teclado.png"],
+      "name": "Xbox",
+      "price": "4.000,00",
+      "installment": "12x de R$340,00",
+      "description": "O console Xbox de última geração oferece uma experiência de jogo imersiva e uma ampla seleção de títulos. Experimente gráficos de alta qualidade e jogabilidade excepcional.",
+      "subDescription": "Experimente jogos envolventes e streaming de mídia em 4K com este console. Proporciona horas de entretenimento para jogadores de todas as idades.",
+      "best": true,
+      "ficha":"Resolução 4K, 1TB HDD, controle sem fio."
+    },
+    {
+      "id": 5,
+      "imgPath": ["/src/assets/PC.png", "/src/assets/Xbox.png", "/src/assets/monitor.png"],
+      "name": "Computador gamer",
+      "price": "6.000,00",
+      "installment": "12x de R$500,00",
+      "description": "O computador gamer de alta potência que atende a jogos intensivos com facilidade. Os gráficos incríveis e a velocidade de processamento impressionante proporcionam uma experiência de jogo de classe mundial.",
+      "subDescription": "Seu design arrojado e iluminação personalizável tornam-no uma escolha estilosa para os entusiastas de jogos. Domine seus jogos favoritos com este poderoso PC.",
+      "best": true,
+      "ficha": "CPU AMD Ryzen 7, GPU NVIDIA RTX 3060, 16GB RAM."
+    },
+    {
+      "id": 6,
+      "imgPath": ["/src/assets/noteCard.png", "/src/assets/PC.png", "/src/assets/monitor.png"],
+      "name": "Notebook",
+      "price": "4.000,00",
+      "installment": "12x de R$340,00",
+      "description": "Um notebook potente com processador de última geração, perfeito para suas necessidades de trabalho e entretenimento. A tela nítida e o desempenho excepcional garantem uma experiência incrível.",
+      "subDescription": " Leve e portátil, este notebook é ideal para profissionais em movimento. Sua bateria de longa duração e design elegante oferecem produtividade em qualquer lugar.",
+      "best": true,
+      "ficha": " Tela 15, Intel Core i5, 8GB RAM."
+    },
+    {
+      "id": 7,
       "imgPath": ["/src/assets/monitor.png", "/src/assets/setup.jpg", "/src/assets/placaVideo.png"],
       "name": "Monitor",
       "price": "1.500,00",
@@ -44,7 +77,7 @@
       "ficha": "Tela 24 1080p, 144Hz, HDMI/DisplayPort."
     },
     {
-      "id": 5,
+      "id": 8,
       "imgPath": ["/src/assets/teclado.png", "/src/assets/Pc2.png", "/src/assets/setup_full.jpg"],
       "name": "Teclado",
       "price": "150,00",
@@ -54,7 +87,7 @@
       "ficha": "Teclas mecânicas, RGB, USB."
     },
     {
-      "id": 6,
+      "id": 9,
       "imgPath": ["/src/assets/Pc2.png", "/src/assets/setup_full.jpg", "/src/assets/Xbox.png"],
       "name": "Computador gamer",
       "price": "5.550,00",
@@ -64,7 +97,7 @@
       "ficha": "CPU Intel Core i7, GPU RTX 3070, 32GB RAM."
     },
     {
-      "id": 7,
+      "id": 10,
       "imgPath": ["/src/assets/placaVideo.png", "/src/assets/noteCard.png", "/src/assets/teclado.png"],
       "name": "Placa de vídeo",
       "price": "3.810,00",
