@@ -1,15 +1,15 @@
 import Carousel from "../components/Carousels/Carousel"
 import CarouselCard from "../components/Carousels/CarouselCard/CarouselCard"
 import Navbar from "../components/Navbar"
-import SectionTitle from "../components/SectionTitle"
+import SectionTitle from "../components/SectionTitle/SectionTitle"
 import Desktop from "../assets/imageDesktop.png"
 import Star from "../assets/icons/star.svg"
 import Store from "../assets/icons/store.svg"
-import ProductsList from "../components/ProductsList"
+import ProductsList from "../components/Products/ProductsList"
 import House from "../assets/icons/house.svg"
 import QuemSomos from "../assets/quemSomos.png"
 import { Typography } from "@mui/material"
-import NewsForm from "../components/NewsForm"
+import NewsForm from "../components/Form/NewsForm"
 import Footer from "../components/Footer"
 
 const Home = () => {

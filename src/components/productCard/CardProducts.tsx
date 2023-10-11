@@ -13,9 +13,7 @@ interface ICardProducts {
 
 const CardProducts = (props: ICardProducts) => {
     const navigate = useNavigate()
-    const baseUrl = import.meta.env.BASE_URL || ""
-
-
+    
     return (
         <Card className="flex pb-0 flex-col items-center gap-3 relative hover:scale-105 transition-all cursor-pointer" sx={{ boxShadow: "none" }} onClick={() => navigate(`/product/${props.id}`)}>
             <CardMedia
@@ -29,7 +27,7 @@ const CardProducts = (props: ICardProducts) => {
                     maxHeight: "28.75rem",
 
                 }}
-                image={`${baseUrl}${props.img}`}
+                image={`${props.img}`}
             />
             <div className="absolute right-0">
                 <img src={fav} alt="Favoritar" />

@@ -12,7 +12,7 @@ import expand from "../assets/icons/expand.svg"
 import openNote from "../assets/openNote.png"
 import { useState } from 'react'
 import jsonData from "../data/mock.json"
-import ModalImage from "../components/ModalImage"
+import ModalImage from "../components/Modal/ModalImage"
 
 
 // Ver o que da pra componentizar
@@ -30,7 +30,6 @@ const Product = () => {
     const product = productId ? products.find((p) => p.id === parseInt(productId)) : null
     const imgArray = product?.imgPath
 
-    const baseUrl = import.meta.env.BASE_URL
 
     return (
         <div className="w-full flex flex-col items-center gap-16 shrink-0 bg-white">
@@ -50,7 +49,7 @@ const Product = () => {
                                 <div className="flex w-168 justify-between items-center">
                                     <img src={left} alt="" />
                                     <div className="flex w-142 h-142 justify-end items-end shrink-0 rounded-2xl opacity-80 relative">
-                                        <img src={`${baseUrl}${imgArray[0]}`} className="object-cover rounded-2xl w-full h-full " />
+                                        <img src={`${imgArray[0]}`} className="object-cover rounded-2xl w-full h-full " />
                                         <div className="shrink-0 absolute bottom-6 right-6 cursor-pointer hover:scale-110 transition-all" onClick={() => setOpen(true)}>
                                             <img src={expand} alt="Expandir"/>
                                         </div>

@@ -1,5 +1,5 @@
-import CardProducts from "./productCard/CardProducts"
-import jsonData from "../data/mock.json"
+import CardProducts from "../ProductCard/CardProducts"
+import jsonData from "../../data/mock.json"
 
 const ProductsList = () => {
     const product = jsonData.products 
