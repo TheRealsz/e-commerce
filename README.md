@@ -8,6 +8,9 @@
 
 > Projeto realizado para medir o nivel de capacidade com as tecnologias Front-End
 
+## 👁️‍🗨️ Demo
+Caso queira apenas visualizar o projeto, clique <a href="https://e-commerce-mu-two-82.vercel.app/" target="_blank">aqui</a>
+
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
