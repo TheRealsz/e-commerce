@@ -11,7 +11,7 @@ import pix from "../assets/icons/pix.svg"
 import picpay from "../assets/icons/picpay.svg"
 import ticket from "../assets/icons/ticket.svg"
 import google from "../assets/google.png"
-import SSL from "../assets/ssl.png"
+import SSL from "../assets/SSL.png"
 import uppyColored from "../assets/icons/uppyColored.svg"
  
 const Footer = () => {
