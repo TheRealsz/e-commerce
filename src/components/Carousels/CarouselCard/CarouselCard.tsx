@@ -1,4 +1,4 @@
-import CardProducts from "../../CardProducts"
+import CardProducts from "../../productCard/CardProducts"
 import jsonData from '../../../data/mock.json'
 import left from '../../../assets/icons/left.svg'
 import right from '../../../assets/icons/right.svg'

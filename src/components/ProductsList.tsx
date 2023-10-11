@@ -1,4 +1,4 @@
-import CardProducts from "./CardProducts"
+import CardProducts from "./productCard/CardProducts"
 import jsonData from "../data/mock.json"
 
 const ProductsList = () => {
@@ -15,7 +15,7 @@ const ProductsList = () => {
                         return (
                             <CardProducts
                                 key={index}
-                                img={product.imgPath}
+                                img={product.imgPath[0]}
                                 productName={product.name}
                                 productPrice={product.price}
                                 width="16.75rem"

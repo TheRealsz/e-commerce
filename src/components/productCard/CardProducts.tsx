@@ -1,6 +1,6 @@
 import { Card, CardContent, CardMedia, Typography } from "@mui/material"
 import { useNavigate } from "react-router-dom"
-import fav from '../assets/icons/fav.svg'
+import fav from '../../assets/icons/fav.svg'
 
 interface ICardProducts {
     img: string,
